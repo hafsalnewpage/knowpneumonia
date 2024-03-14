@@ -1,0 +1,230 @@
+main .higher-risk-container {
+    margin-top: -40px;
+}
+
+.higher-risk {
+    display: flex;
+    margin: auto;
+    height: 218px;
+}
+
+.higher-risk-img {
+    background-image: url(/icons/arrow-new.png);
+    background-size: 100% 100%;
+    width: 36.35%;
+    z-index: 2;
+}
+
+.higher-risk-content {
+    background-color: #f3f1ed;
+    display: flex;
+    margin-left: -64px;
+    padding: 76px 35px 76px 117px;
+    z-index: 1;
+}
+
+.higher-risk-heading {
+    padding: 90px 65px 90px;
+    color: #783384;
+}
+
+.higher-risk-heading h2 {
+    font-size: 32px;
+    font-family: Lato;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.26;
+    letter-spacing: -0.34px;
+    text-align: left;
+    color: #783384;
+    width: auto;
+    margin: 0;
+}
+
+.higher-risk-content-text-1 {
+    padding: 46px 38px 0 46px;
+    font-size: 16.5px;
+}
+
+.higher-risk-content-text-1 span {
+    border: 3px solid #d6d2ca;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #d6d2ca;
+    font-family: roboto-slab, serif;
+    font-size: 16.5px;
+    font-weight: 700;
+    color: #363636;
+}
+
+.higher-risk h3 {
+    font-size: 30.5px;
+    font-family: roboto-slab, serif;
+    font-weight: 600;
+    color: #363636;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+}
+
+.higher-risk p {
+    font-family: roboto-slab, serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: #630172;
+    line-height: 1.56;
+    letter-spacing: -0.18px;
+    margin-top: 0;
+    margin-bottom: 23px;
+}
+
+.higher-risk-content-text-0, .higher-risk-content-text-2 {
+    text-align: center;
+}
+
+.higher-risk-content-text-1 p {
+    border: 3px solid #d6d2ca;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #d6d2ca;
+    font-family: roboto-slab, serif;
+    font-size: 16.5px;
+    font-weight: 700;
+    color: #363636;
+}
+
+.higher-risk-content-text-0 a.button, .higher-risk-content-text-2 a.button {
+    background-color: #783384;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    line-height: 2em;
+    font-size: 17px;
+    font-weight: normal;
+    color: white;
+    border: none;
+    padding: 0;
+    overflow: visible;
+    border-radius: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+    line-height: 2.35em;
+    margin: 0;
+    &:after {
+        border-left: 10px solid #783384;
+    }
+}
+
+.higher-risk-content-text-0 a.button:after, .higher-risk-content-text-2 a.button:after {
+    content: "";
+    position: absolute;
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+    height: 0px;
+    width: 0px;
+    margin-right: -10px;
+    right: 0;
+}
+
+@media only screen and (min-width: 1200px) {
+    .higher-risk-img {
+    }
+
+    .higher-risk-content {
+        padding: 36px 35px 46px 117px;
+    }
+    
+    .higher-risk-heading {
+        padding: 70px 65px 90px;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+main .higher-risk-container {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.higher-risk-img {
+    padding: 20px 50px 50px 64px;
+}
+
+}
+
+
+@media only screen and (max-width: 768px) and (min-width: 599px) {   
+    .higher-risk-img {
+        padding: 100px 150px 50px 150px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+.higher-risk {
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+.higher-risk-img {
+    width: 100%;
+    background-image: url(/icons/white-arrow-mobile.png);
+    z-index: 2;
+}
+
+.higher-risk-heading {
+    text-align: center;
+    opacity: 1;
+    padding: 0;
+}
+
+.higher-risk-heading h2 {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18.5px;
+    font-style: normal;
+}
+
+.higher-risk-content {
+    flex-direction: column;
+    text-align: center;
+    margin: -60px auto 0 auto;
+    width: 100%;
+    padding: 90px 0;
+}
+
+.higher-risk-content-text-1 {
+    padding: 50px 0;
+}
+
+.higher-risk h3 {
+    font-size: 24px;
+}
+
+.higher-risk p {
+    font-size: 16px;
+}
+
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+      main .higher-risk-container {
+             margin-top: -10px;
+      }
+      
+      .higher-risk-heading {
+          padding: 50px 50px 0px;
+      }
+      
+      .higher-risk-content {
+          padding: 30px 30px 30px 100px
+      }
+  }

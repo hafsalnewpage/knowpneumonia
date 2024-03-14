@@ -1,0 +1,7 @@
+.nav-sections .default-content-wrapper ul {
+    display: flex;
+}
+
+.nav-sections .default-content-wrapper ul li {
+    width: 100%;
+}
