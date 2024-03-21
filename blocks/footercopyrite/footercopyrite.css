@@ -1,0 +1,25 @@
+.footercopyrite .copyrite  {
+    display: inline-flex;
+    width: 80%;
+    font-size: 13px;
+}
+
+.footer .copyrite-text {
+    margin-left: 35px;
+}
+
+.footer .copyrite-text p {
+    font-size: 13px;
+}
+
+.footer .copyrite-text a {
+    color: #7a3087;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .footercopyrite .copyrite {
+        display: block;
+        width: 100%;
+    }
+}

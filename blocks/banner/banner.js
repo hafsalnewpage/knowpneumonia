@@ -33,15 +33,7 @@ export default function decorate(block) {
                 button2.classList.remove('webbutton');
                 button2.classList.add('mobbutton');
                 let parent2 = button.parentNode.parentNode;               
-                parent2.append(button2);
-                
-                
-                
-                
-                
-               
-                
-                
+                parent2.append(button2);  
             }
         });
     });

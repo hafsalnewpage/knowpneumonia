@@ -208,3 +208,68 @@ main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
 }
+
+
+main .unsure {
+    text-align:center;
+    padding:60px!important;
+}
+
+main .unsure h3 {
+    font-size:24px;
+}
+
+main .unsure a {
+    color: #783384;
+    text-decoration:underline;
+}
+
+main .vaccinated {
+    font-size:24px;
+    font-weight:700;
+    background: #783384;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0 30px 0 !important;
+}
+
+main .vaccinated h3 {
+    font-size:24px;
+}
+
+main .vaccinated a {
+    text-decoration:underline;
+    font-weight:400;
+    display:block;
+    color:#fff;
+    margin-top:20px;
+}
+
+@media only screen and (max-width: 768px) {
+    main .unsure {
+        text-align: center;
+        padding: 20px!important;
+    }
+}
+
+
+.footer-menu .default-content-wrapper > ul {
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+}
+
+.footer-menu .default-content-wrapper > ul > li > ul {
+    margin:0;
+    padding:0;
+}
+
+.footer-menu ul li  {
+    color: #7a3087;
+    font-size: 15px;
+    list-style:none;
+}
+
+.footer-menu ul li a {
+    color: #7a3087;
+}

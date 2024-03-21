@@ -41,7 +41,11 @@ function focusNavSection() {
  * @param {Element} sections The container element
  * @param {Boolean} expanded Whether the element should be expanded or collapsed
  */
-function toggleAllNavSections(sections, expanded = false) {
+function toggleAllNavSections(sections, expanded = false, fromMain=false) {
+  if(fromMain) {
+      expanded=false;
+  }
+
   sections.querySelectorAll('.nav-sections .default-content-wrapper > ul > li').forEach((section) => {
     section.setAttribute('aria-expanded', expanded);
   });
@@ -54,11 +58,12 @@ function toggleAllNavSections(sections, expanded = false) {
  * @param {*} forceExpanded Optional param to force nav expand behavior when not null
  */
 function toggleMenu(nav, navSections, forceExpanded = null) {
+    
   const expanded = forceExpanded !== null ? !forceExpanded : nav.getAttribute('aria-expanded') === 'true';
   const button = nav.querySelector('.nav-hamburger button');
   document.body.style.overflowY = (expanded || isDesktop.matches) ? '' : 'hidden';
   nav.setAttribute('aria-expanded', expanded ? 'false' : 'true');
-  toggleAllNavSections(navSections, expanded || isDesktop.matches ? 'false' : 'true');
+  toggleAllNavSections(navSections, expanded || isDesktop.matches ? 'false' : 'true', true);
   button.setAttribute('aria-label', expanded ? 'Open navigation' : 'Close navigation');
   // enable nav dropdown keyboard accessibility
   const navDrops = navSections.querySelectorAll('.nav-drop');
@@ -117,8 +122,7 @@ export default async function decorate(block) {
   const navSections = nav.querySelector('.nav-sections');
   if (navSections) {
     navSections.querySelectorAll(':scope .default-content-wrapper > ul > li').forEach((navSection) => {
-      if (navSection.querySelector('ul')) navSection.classList.add('nav-drop');
-      
+      if (navSection.querySelector('ul')) navSection.classList.add('nav-drop');  
       //let parentDiv = navSection;     
       let liDiv = document.createElement('div');
       let anchor = navSection.querySelector('a');
@@ -154,4 +158,15 @@ export default async function decorate(block) {
   navWrapper.className = 'nav-wrapper';
   navWrapper.append(nav);
   block.append(navWrapper);
+  
+  
+  
+let languagemenu = document.querySelector('header .language > .default-content-wrapper > ul');
+languagemenu.addEventListener('click', () => {
+    const expanded = languagemenu.getAttribute('aria-expanded') === 'true';
+    languagemenu.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+});
+  
+  
+  
 }

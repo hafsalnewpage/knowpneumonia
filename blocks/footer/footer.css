@@ -1,14 +1,27 @@
 footer {
-  padding: 2rem;
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-s);
+    padding: 2rem;
+    background-color: var(--light-color);
+    font-size: var(--body-font-size-s);
 }
 
 footer .footer {
-  max-width: 1200px;
-  margin: auto;
+    max-width: 1200px;
+    margin: auto;
 }
 
 footer .footer p {
-  margin: 0;
+    margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .footer-menu .default-content-wrapper > ul {
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+
+    .footer-menu .default-content-wrapper > ul > li {
+        padding-top: 15px;
+    }
 }
