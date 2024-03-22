@@ -2,6 +2,10 @@ main .higher-risk-container {
     margin-top: -40px;
 }
 
+.wpp-higher-risk.higher-risk-container {
+    margin-top: 80px;
+}
+
 .higher-risk {
     display: flex;
     margin: auto;
@@ -164,6 +168,11 @@ main .higher-risk-container {
 
 
 @media only screen and (max-width: 768px) {
+    
+.wpp-higher-risk.higher-risk-container {
+    margin-top: 15px;
+}
+
 .higher-risk {
     flex-wrap: wrap;
     width: 100%;

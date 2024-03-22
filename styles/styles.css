@@ -186,14 +186,20 @@ main img {
 }
 
 /* sections */
+//main .section {
+ // padding: 64px 16px;
+//}
+
 main .section {
-  padding: 64px 16px;
+    max-width: 1110px;
+    margin: auto;
+    padding: 0;
 }
 
 @media (width >= 600px) {
-  main .section {
-    padding: 64px 32px;
-  }
+  //main .section {
+    //padding: 64px 32px;
+  //}
 }
 
 @media (width >= 900px) {

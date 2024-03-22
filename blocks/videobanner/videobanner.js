@@ -8,29 +8,26 @@ export default function decorate(block) {
             row.classList.add('mobile-align');  
         }
         [...row.children].forEach((col, colNo) => {
-
-            if (colNo === 0) {
-                
+         
                 let videoLink = col.querySelector('a');
-                col.classList.add('video-banner');    
-                let videoElement = document.createElement('video');
-                videoElement.controls = true;
-                let  sourceElement = document.createElement('source');
-                sourceElement.src =  videoLink.href
-                sourceElement.type = 'video/mp4';
+                
+                if(videoLink) {
+                
+                    col.classList.add('video-banner');    
+                    let videoElement = document.createElement('video');
+                    videoElement.controls = true;
+                    let  sourceElement = document.createElement('source');
+                    sourceElement.src =  videoLink.href
+                    sourceElement.type = 'video/mp4';
 
-                videoElement.appendChild(sourceElement);
+                    videoElement.appendChild(sourceElement);
 
-                videoLink.replaceWith(videoElement);
-                
-                
-                
-            }
-            
-            if (colNo === 1) {
-                col.classList.add('banner-text-home');
-                col.classList.add('pneumonia-banner');
-            }
+                    videoLink.replaceWith(videoElement);
+                } else {
+                    
+                    col.classList.add('banner-text-home');
+                    col.classList.add('pneumonia-banner');
+                }
         });
     });
 }
