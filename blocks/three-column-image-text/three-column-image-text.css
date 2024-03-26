@@ -1,20 +1,20 @@
-.footbanner {
+.three-column-image-text {
     display: flex;
 }
 
-.footbanner > div {
+.three-column-image-text > div {
     display: flex;
 }
 
-.footbanner-wrapper {
+.three-column-image-text-wrapper {
     padding-top: 92px;
 }
 
-.footbanner-wrapper {
+.three-column-image-text-wrapper {
     padding-bottom: 92px;
 }
 
-.footbanner .icon-text {
+.three-column-image-text .icon-text {
     padding: 14px 12px 22px 17px;
     font-size: 22px;
     font-weight: 700;
@@ -26,48 +26,48 @@
     
 }
 
-.footbanner .icon-image {
+.three-column-image-text .icon-image {
     padding-left: 30px;
 }
 
-.footbanner .icon-text a {
+.three-column-image-text .icon-text a {
    color: #1e1e1e; 
    text-decoration: underline;
 }
 
-.footbanner hr {
+.three-column-image-text hr {
     transform: rotate(12deg);
 }
 
 @media only screen and (max-width: 768px) {
-    .footbanner {
+    .three-column-image-text {
       display: block;
     } 
     
-    .footbanner-wrapper {
+    .three-column-image-text-wrapper {
         padding-top: 20px;
     }
     
-    .footbanner > div {
+    .three-column-image-text > div {
         padding-top: 15px;
         padding-bottom: 15px;
         border-bottom: 2px solid #ccc;
     }
     
-    .footbanner .icon-image {
+    .three-column-image-text .icon-image {
         width: 40%;
         padding-left: 0px;
     }
     
-    .footbanner .icon-image img {
+    .three-column-image-text .icon-image img {
         width: 240px;
     }
     
-    .footbanner .icon-text {
+    .three-column-image-text .icon-text {
         width: 60%
     }
     
-    .footbanner hr {
+    .three-column-image-text hr {
         display: none;
     }
     
