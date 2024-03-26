@@ -1,34 +1,152 @@
-main .hero-container > div {
-  max-width: unset;
+p {
+    font-size: 20px;
+    font-family: lato;
+    color: #434343;
 }
-  
-main .hero-container {
-  padding: 0;
-}
-
-.hero {
-  position: relative;
-  padding: 32px;
-  min-height: 300px;
+h1 {
+    font-family: Lato;
+    font-size: 50px;
+    line-height: 1;
+    color: #783384;
 }
 
-.hero h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: white;
+.banner-text {
+    position: absolute;
+    left: 80px;
+    right: 384px;
 }
 
-.hero picture {
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  object-fit: cover;
-  box-sizing: border-box;
+.banner-text h1 {
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: -0.5px;
+    margin-bottom: 28px;
 }
 
-.hero img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+
+.banner-text p {
+    max-width: 345px;
+}
+
+.banner-homepage {
+    position: relative;
+    z-index: 0;
+}
+
+.homepg {
+    max-width: 1113px;
+    margin: auto;
+}
+
+.banner-homepage a.mobbutton {
+    display: none;
+}
+
+.banner-homepage a.how-it-work-button {
+    background-color: #783384;
+    cursor: pointer;
+    position: relative;
+    line-height: 2em;
+    font-size: 17px;
+    font-weight: normal;
+    color: white;
+    border: none;
+    padding: 0;
+    overflow: visible;
+    border-radius: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+    line-height: 3em;
+    &:after {
+        border-left: 10px solid #783384;
+    }
+}
+
+.banner-homepage a.how-it-work-button:after {
+    content: "";
+    position: absolute;
+    border-bottom: 26px solid transparent;
+    border-top: 25px solid transparent;
+    height: 0px;
+    width: 0px;
+    margin-right: -10px;
+    right: 0;
+}
+
+
+main .section {
+    max-width: 1110px;
+    margin: auto;
+    padding: 0;
+}
+
+@media only screen and (min-width: 1200px) {
+    .banner-text {
+        top: 60px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .banner-text {
+        position: absolute;
+        top: 12%;
+        left: 6%;
+        right: 0;
+        width: 50%;
+    }
+
+    .banner-homepage a.webbutton {
+        display: none
+    }
+
+    .banner-homepage a.mobbutton {
+        display: block;
+        width: 65%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .banner-text h1 {
+        font-size: 20px;
+        line-height: 21px;
+        letter-spacing: -0.17px;
+        margin-bottom: 0;
+    }
+
+    .banner-text p {
+        font-size: 14px;
+        line-height: 18.5px;
+        letter-spacing: -0.35px;
+        margin-top: 12px;
+        max-width: 150px;
+    }
+
+    .banner-homepage a.webbutton {
+        display: none
+    }
+
+    .banner-homepage a.mobbutton {
+        display: block;
+        width: 65%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (-webkit-min-device-pixel-ratio: 1) {
+    .banner-text {
+        left: 52px;
+        top: 10%;
+    }
+
+    .banner-text h1 {
+        font-size: 40px;
+    }
 }
