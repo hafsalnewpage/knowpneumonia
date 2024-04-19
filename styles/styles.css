@@ -341,5 +341,35 @@ main .vaccinated a {
         padding: 10px;
         text-align: center;
     }
+    
+        
+    main .share-your-story-help .default-content-wrapper {
+        width: 100%;
+    }
+}
+
+.share-your-story-help h2 {
+    font-size: 40px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.05;
+    letter-spacing: normal;
+    color: #1e1e1e;
+}
+.share-your-story-help p {
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #363636;
+    width: 92%;
+}
+
+.share-your-story-help .default-content-wrapper {
+    width: 60%;
+    margin-left:0px;
 }
  

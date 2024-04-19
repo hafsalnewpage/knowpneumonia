@@ -65,17 +65,10 @@ main .form .form-checkbox-wrapper {
 }
 
 main .form .form-checkbox-wrapper input[type='checkbox'] {
-  appearance: none;
-
-  /* stylelint-disable */
-  -webkit-appearance: none;
-  -moz-appearance: none;
-
   /* stylelint-enable */
   height: 20px;
   width: 20px;
   position: relative;
-  border: unset;
   padding: unset;
   margin-right: var(--spacing-xxs);
   margin-left: 0;
@@ -142,6 +135,10 @@ main .form button {
     line-height: 3em;
 }
 
+.form-submit-wrapper button:disabled, .form-submit-wrapper button:disabled:hover {
+    background-color: #783384;
+}
+
 .form-submit-wrapper button:after {
     content: "";
     position: absolute;
@@ -168,6 +165,61 @@ main .form button {
   }
 
   main .form label {
-    width: 72%;
+    width: 100%;
   }
+}
+
+main .form.share-your-story-form {
+    width: 60%;
+}
+
+main .form.share-your-story-form .form-text-wrapper, main .form.share-your-story-form .form-email-wrapper,
+main .form.share-your-story-form .form-tel-wrapper {
+    display: block;
+}
+
+
+.share-your-story-form .form-text-wrapper input, 
+.share-your-story-form .form-email-wrapper input,
+.share-your-story-form .form-tel-wrapper input,
+.share-your-story-form .form-checkbox-wrapper input {
+    font-family: Lato;
+    font-size: 22px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.18;
+    letter-spacing: normal;
+    text-align: left;
+    color: #363636;
+    padding-left: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #22874e;
+    width: 75%;
+}
+
+.share-your-story-form .form-checkbox-wrapper label {
+    padding-left: 8px;
+}
+
+.share-your-story-form .field-wrapper {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+        
+    main .form.share-your-story-form {
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    .share-your-story-form .form-text-wrapper input, 
+    .share-your-story-form .form-email-wrapper input,
+    .share-your-story-form .form-tel-wrapper input,
+    .share-your-story-form .form-checkbox-wrapper input {
+       width: 100%;
+    }
+
 }

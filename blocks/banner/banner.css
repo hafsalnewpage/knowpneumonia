@@ -107,7 +107,7 @@ main .section.banner-container {
 
 .share-your-story .image-banner-text {
     width: 35%;
-    padding-left: 30px;
+    padding-left: 0px;
 }
 
 .share-your-story .image-banner-image {
@@ -193,6 +193,15 @@ main .section.banner-container {
     
     .wppgameplan .image-banner-image {
         padding-top: 0px;
+    }
+    
+    .share-your-story .image-banner-text {
+        padding-left: 0;
+    }
+    
+    .share-your-story .image-banner-image {
+        display: block;
+        padding-left: 0px;
     }
 }
 
