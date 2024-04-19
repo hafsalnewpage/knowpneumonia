@@ -94,6 +94,51 @@ main .section.banner-container {
     padding-top: 50px;
 }
 
+.hero.understand-your-risk .banner-text h4 {
+    font-size: 18.image-banner-text apx;
+    position: relative;
+    top: 30px;
+}    
+    
+.hero.understand-your-risk .banner-text h4 a {
+    color: #783384;
+}
+
+
+.share-your-story .image-banner-text {
+    width: 35%;
+    padding-left: 30px;
+}
+
+.share-your-story .image-banner-image {
+    width: 65%;
+    display: flex;
+    padding-left: 70px;
+}
+
+.share-your-story .image-banner-text h2 {
+    font-size: 40px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.15;
+    letter-spacing: normal;
+    color: #22874e;
+    width: 90%;
+}
+
+.share-your-story .image-banner-text a {
+    background-color: transparent;
+    color: #783384;
+    padding: 0;
+    line-height: 1px;
+    margin: 0;
+}
+
+.share-your-story .image-banner-text a:after {
+    display: none;
+}
+
 
 @media only screen and (max-width: 768px) {
     .image-banner-main {
@@ -102,12 +147,13 @@ main .section.banner-container {
     }
 
     .image-banner-image {
-        width: 100%;
+        width: 100% !important;
         text-align: center;
+        margin: 0 auto !important;
     }
 
     .image-banner-text {
-        width: 100%;
+        width: 100% !important;
         padding-left: 0px;
         text-align: center;
     }
@@ -125,4 +171,37 @@ main .section.banner-container {
     .sai .image-banner-image {
         width: 100%;
     }
+    
+    
+    .hero.understand-your-risk .banner-text {
+        width: 100%;
+    }
+    
+    .hero.understand-your-risk .banner-text h1 {
+        width: 50%;
+    }
+    
+    .hero.understand-your-risk .banner-text h4 {
+        font-size: 16px;
+        position: relative;
+        top: 30px;
+    }    
+    
+    .hero.understand-your-risk .banner-text h4 a {
+        color: #783384;
+    }
+    
+    .wppgameplan .image-banner-image {
+        padding-top: 0px;
+    }
 }
+
+    .understand-your-risk .image-banner-text {
+        width: 50%;
+    }
+
+    .understand-your-risk .image-banner-image {
+        width: 50%;
+        display: flex;
+        margin: 5% 0% 0 5%;
+    }

@@ -279,3 +279,67 @@ main .vaccinated a {
 .footer-menu ul li a {
     color: #7a3087;
 }
+
+.stayahead .default-content-wrapper h3, .whatyoushouldknow .default-content-wrapper h3 {
+    font-size: 30px;
+    color: #783384;
+}
+
+.stayahead .default-content-wrapper p, .whatyoushouldknow .default-content-wrapper p {
+    font-size: 20px;
+}
+
+.chronic-health-conditions h2 {
+    font-size: 34px;
+}
+
+.chronic-health-conditions h2 {
+    font-size: 34px;
+}
+
+.chronic-health-conditions .default-content-wrapper a.button {
+    background-color: #783384;
+    cursor: pointer;
+    position: relative;
+    font-size: 17px;
+    font-weight: normal;
+    color: white;
+    border: none;
+    padding: 0px;
+    overflow: visible;
+    border-radius: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+    line-height: 3em;
+}
+
+.chronic-health-conditions .default-content-wrapper  a.button:after {
+    content: "";
+    position: absolute;
+    border-bottom: 26px solid transparent;
+    border-top: 25px solid transparent;
+    height: 0px;
+    width: 0px;
+    margin-right: -10px;
+    right: 0;
+    border-left: 10px solid #783384;
+}
+
+.chronic-health-conditions .default-content-wrapper p:nth-of-type(1) {  
+    background-color: #f3f1ed;
+    padding: 80px 42px 81px 47px;
+}
+
+.chronic-health-conditions .default-content-wrapper .button-container{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: -60px;
+}
+
+@media only screen and (max-width: 768px) {
+    .default-content-wrapper {
+        padding: 10px;
+        text-align: center;
+    }
+}
+ 
