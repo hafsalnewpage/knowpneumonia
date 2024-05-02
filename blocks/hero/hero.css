@@ -83,6 +83,31 @@ main .section {
     padding: 0;
 }
 
+.hero.help-protect-yourself h1{
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+.hero.help-protect-yourself p{
+    font-size: 20px;
+    max-width: 500px;
+}
+
+
+.take-action .banner-text {
+    width: 48%;
+}
+
+.take-action .banner-text h1{
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+.take-action .banner-text p{
+    font-size: 20px;
+    max-width: 500px;
+}
+
 @media only screen and (min-width: 1200px) {
     .banner-text {
         top: 60px;
@@ -107,6 +132,10 @@ main .section {
         display: block;
         width: 65%;
         margin: 0 auto;
+    }
+    
+    .take-action .banner-text h1 {
+        font-size: 20px;
     }
 }
 
@@ -151,6 +180,9 @@ main .section {
         width: 65%;
         margin: 0 auto;
     }
+    .take-action .banner-text h1 {
+        font-size: 20px;
+    }
 }
 
 @media only screen
@@ -165,16 +197,5 @@ and (-webkit-min-device-pixel-ratio: 1) {
     .banner-text h1 {
         font-size: 40px;
     }
-}
-
-
-.hero.help-protect-yourself h1{
-    font-size: 40px;
-    margin-bottom: 0px;
-}
-
-.hero.help-protect-yourself p{
-    font-size: 20px;
-    max-width: 500px;
 }
 

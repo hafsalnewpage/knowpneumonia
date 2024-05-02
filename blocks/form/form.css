@@ -223,3 +223,17 @@ main .form.share-your-story-form .form-tel-wrapper {
     }
 
 }
+
+
+.error-message {
+    color: red;
+    display: block;
+    font-size: 16px;
+}
+
+.share-your-story-form .form-text-wrapper input.error, 
+.share-your-story-form .form-email-wrapper input.error, 
+.share-your-story-form .form-tel-wrapper input.error, 
+.share-your-story-form .form-checkbox-wrapper input.error {
+    border: 1px solid red;
+}
